@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		081E1BCB25B6E52800E18E70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081E1BCA25B6E52800E18E70 /* AppDelegate.swift */; };
 		081E1BCD25B6E52800E18E70 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081E1BCC25B6E52800E18E70 /* SceneDelegate.swift */; };
-		081E1BCF25B6E52800E18E70 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081E1BCE25B6E52800E18E70 /* ContentView.swift */; };
 		081E1BD125B6E52C00E18E70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 081E1BD025B6E52C00E18E70 /* Assets.xcassets */; };
 		081E1BD425B6E52C00E18E70 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 081E1BD325B6E52C00E18E70 /* Preview Assets.xcassets */; };
 		081E1BD725B6E52C00E18E70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 081E1BD525B6E52C00E18E70 /* LaunchScreen.storyboard */; };
+		081E1BE425B6E56A00E18E70 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081E1BE325B6E56A00E18E70 /* HomeScreen.swift */; };
+		081E1BE725B6E57900E18E70 /* SignInScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081E1BE625B6E57900E18E70 /* SignInScreen.swift */; };
+		081E1BEA25B6E58300E18E70 /* StarterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081E1BE925B6E58300E18E70 /* StarterScreen.swift */; };
+		081E1BED25B6E58B00E18E70 /* SignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081E1BEC25B6E58B00E18E70 /* SignUpScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		081E1BC725B6E52800E18E70 /* NotificationCenterPresent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotificationCenterPresent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		081E1BCA25B6E52800E18E70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		081E1BCC25B6E52800E18E70 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		081E1BCE25B6E52800E18E70 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		081E1BD025B6E52C00E18E70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		081E1BD325B6E52C00E18E70 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		081E1BD625B6E52C00E18E70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		081E1BD825B6E52C00E18E70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		081E1BE325B6E56A00E18E70 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		081E1BE625B6E57900E18E70 /* SignInScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInScreen.swift; sourceTree = "<group>"; };
+		081E1BE925B6E58300E18E70 /* StarterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterScreen.swift; sourceTree = "<group>"; };
+		081E1BEC25B6E58B00E18E70 /* SignUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,11 +62,10 @@
 		081E1BC925B6E52800E18E70 /* NotificationCenterPresent */ = {
 			isa = PBXGroup;
 			children = (
+				081E1BE125B6E53700E18E70 /* screens */,
+				081E1BDF25B6E53200E18E70 /* apputils */,
 				081E1BCA25B6E52800E18E70 /* AppDelegate.swift */,
 				081E1BCC25B6E52800E18E70 /* SceneDelegate.swift */,
-				081E1BCE25B6E52800E18E70 /* ContentView.swift */,
-				081E1BD025B6E52C00E18E70 /* Assets.xcassets */,
-				081E1BD525B6E52C00E18E70 /* LaunchScreen.storyboard */,
 				081E1BD825B6E52C00E18E70 /* Info.plist */,
 				081E1BD225B6E52C00E18E70 /* Preview Content */,
 			);
@@ -73,6 +78,26 @@
 				081E1BD325B6E52C00E18E70 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		081E1BDF25B6E53200E18E70 /* apputils */ = {
+			isa = PBXGroup;
+			children = (
+				081E1BD525B6E52C00E18E70 /* LaunchScreen.storyboard */,
+				081E1BD025B6E52C00E18E70 /* Assets.xcassets */,
+			);
+			path = apputils;
+			sourceTree = "<group>";
+		};
+		081E1BE125B6E53700E18E70 /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				081E1BE325B6E56A00E18E70 /* HomeScreen.swift */,
+				081E1BE625B6E57900E18E70 /* SignInScreen.swift */,
+				081E1BE925B6E58300E18E70 /* StarterScreen.swift */,
+				081E1BEC25B6E58B00E18E70 /* SignUpScreen.swift */,
+			);
+			path = screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,8 +171,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				081E1BCB25B6E52800E18E70 /* AppDelegate.swift in Sources */,
+				081E1BE725B6E57900E18E70 /* SignInScreen.swift in Sources */,
 				081E1BCD25B6E52800E18E70 /* SceneDelegate.swift in Sources */,
-				081E1BCF25B6E52800E18E70 /* ContentView.swift in Sources */,
+				081E1BE425B6E56A00E18E70 /* HomeScreen.swift in Sources */,
+				081E1BEA25B6E58300E18E70 /* StarterScreen.swift in Sources */,
+				081E1BED25B6E58B00E18E70 /* SignUpScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
